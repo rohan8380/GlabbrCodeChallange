@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Glabbr Code Challange</string>
+    <string name="camera">Camera</string>
+    <string name="gallary">Gallary</string>
+    <string name="setting">Setting</string>
+    <string name="new_group">New Group</string>
+    <string name="new_broadcast">New Broadcast</string>
+    <string name="starred_message">Starred Message</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whatsappstart"
+    tools:context=".MainActivity"
+    android:weightSum="4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="3.5"
+        android:gravity="top"
+        android:text="Welcome to WhatsApp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FF047B3F"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap ''Agree and continue'' to accept the WhatsApp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.2"
+        android:gravity="top"
+        android:text="Terms of service and policy."
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#FF03BE21"
+        android:gravity="center"
+        android:text="AGREE AND CONTINUE"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Verify your phone number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FF047B3F"
+        android:textStyle="bold" />
+
+    <TextView
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Waiting to automatically detect an SMS"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sent to"
+            android:paddingLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/txtNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="+91 1234567899."
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtWrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:onClick="wrong"
+            android:text="Wrong number ?"
+            android:textColor="@android:color/holo_blue_light" />
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:hint="- - -  - - - "
+        android:inputType="number"
+        android:maxLength="6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter 6-digit code"
+        android:gravity="center"/>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

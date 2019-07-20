@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Verify your phone number"
+           android:textColor="#FF047B3F"
+           android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+           android:textStyle="bold"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="10dp"/>
+
+       <TextView
+           android:paddingRight="10dp"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="25dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:text="WhatsApp will send an SMS message"/>
+
+       <TextView
+           android:paddingRight="10dp"
+           android:paddingLeft="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:text="(carrier charges may apply)to verify your"/>
+
+       <TextView
+           android:paddingRight="10dp"
+           android:paddingLeft="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:text=" phone number.Enter your country code"/>
+
+       <TextView
+           android:paddingRight="10dp"
+           android:paddingLeft="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:text=" and phone number."/>
+
+    <Spinner
+        android:id="@+id/spnCountry"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:dropDownWidth="match_parent"
+        android:gravity="center|center_horizontal"
+        android:spinnerMode="dialog">
+
+    </Spinner>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+
+        <EditText
+            android:id="@+id/txtCountryCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:textColor="@android:color/black"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0"
+        android:background="#FF03BE21"
+        android:onClick="next"
+        android:text="NEXT"
+        android:textColor="@android:color/white" />
+
+
+
+
+
+</LinearLayout>

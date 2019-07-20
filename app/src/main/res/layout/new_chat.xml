@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FE02583B"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="start"
+                android:src="@drawable/defalt" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtUName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtOnlineStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="serif"
+                    android:text="Online"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#eeebeb"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        >
+
+        <EditText
+            android:layout_weight="0.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:hint="Enter Your Message"
+            android:paddingLeft="10dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_marginLeft="2dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/snd"
+            app:fabSize="normal"
+            app:rippleColor="@android:color/black"
+            />
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

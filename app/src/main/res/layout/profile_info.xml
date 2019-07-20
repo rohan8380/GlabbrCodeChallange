@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Info"
+        android:textColor="#FF047B3F"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Please provide your name and an optional profile photo."/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imgCam"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter"
+            android:onClick="option"
+            android:src="@drawable/camera" />
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Type Your Name here"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <ImageView
+            android:id="@+id/imgEmoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:src="@mipmap/emoji"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0"
+        android:background="#FF03BE21"
+        android:onClick="next"
+        android:text="NEXT"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
